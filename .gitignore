@@ -4,6 +4,8 @@ __pycache__/
 *.pyo
 *.db
 .env
+.env.*
+!.env.example
 config.production.yaml
 *.log
 tmp/

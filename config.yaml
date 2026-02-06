@@ -1,7 +1,8 @@
 # Default config for development / start.sh (paths local to repo)
+# Use neutral defaults for public repo; override locally as needed.
 host: "0.0.0.0"
-port: 80
-model: "large"
+port: 8000
+model: "small"
 # device: "cpu" | "cuda" (or "cuda:0") for GPU
 device: "cpu"
 # compute_type: "int8" (CPU) | "float16" or "int8" (GPU with CUDA)
@@ -11,5 +12,5 @@ temp_dir: "./.cache/tmp"
 request_timeout_seconds: 3600
 webhook_timeout_seconds: 10
 beam_size: 5
-language: es
+# language: null  # or e.g. "es", "en" to force
 vad_filter: true

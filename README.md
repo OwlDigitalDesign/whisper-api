@@ -172,3 +172,9 @@ First run downloads the Whisper model (see `model` in config). For 12 GB RAM (CP
 **`src/`** (copied to `/opt/whisper-api/` by setup): `main.py`, `config.py`, `cache.py`, `transcribe.py`, `routes.py`, `run_server.py`.
 
 **Production**: Config in `/etc/whisper-api/config.yaml`; cache and temp in `/var/lib/whisper/`.
+
+---
+
+## License
+
+MIT License. See [LICENSE](LICENSE).
