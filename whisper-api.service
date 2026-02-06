@@ -1,0 +1,15 @@
+[Unit]
+Description=Faster Whisper API
+After=network.target
+
+[Service]
+Type=simple
+User=whisper
+WorkingDirectory=/opt/whisper-api
+ExecStart=/opt/whisper-api/venv/bin/python run_server.py
+Restart=on-failure
+RestartSec=5
+Environment=PATH=/opt/whisper-api/venv/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target

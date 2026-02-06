@@ -1,0 +1,16 @@
+# Production config template (paths under /var/lib/whisper)
+# Copy to config.production.yaml, edit, then run setup.sh
+host: "0.0.0.0"
+port: 8000
+model: "small"
+# device: "cpu" | "cuda" (or "cuda:0") for GPU; requires CUDA and faster-whisper with GPU support
+device: "cpu"
+# compute_type: "int8" (CPU) | "float16" or "int8" (GPU)
+compute_type: "int8"
+cache_db_path: "/var/lib/whisper/cache.db"
+temp_dir: "/var/lib/whisper/tmp"
+request_timeout_seconds: 3600
+webhook_timeout_seconds: 10
+beam_size: 5
+# language: null
+vad_filter: true

@@ -1,0 +1,15 @@
+# Default config for development / start.sh (paths local to repo)
+host: "0.0.0.0"
+port: 80
+model: "large"
+# device: "cpu" | "cuda" (or "cuda:0") for GPU
+device: "cpu"
+# compute_type: "int8" (CPU) | "float16" or "int8" (GPU with CUDA)
+compute_type: "int8"
+cache_db_path: "./.cache/cache.db"
+temp_dir: "./.cache/tmp"
+request_timeout_seconds: 3600
+webhook_timeout_seconds: 10
+beam_size: 5
+language: es
+vad_filter: true
