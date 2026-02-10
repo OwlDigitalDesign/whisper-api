@@ -7,8 +7,8 @@ model: "small"
 device: "cpu"
 # compute_type: "int8" (CPU) | "float16" or "int8" (GPU with CUDA)
 compute_type: "int8"
-cache_db_path: "./.cache/cache.db"
-temp_dir: "./.cache/tmp"
+cache_db_path: "/app/.cache/cache.db"
+temp_dir: "/app/.cache/tmp"
 request_timeout_seconds: 3600
 webhook_timeout_seconds: 10
 beam_size: 5
