@@ -1,0 +1,15 @@
+services:
+  whisper-api:
+    build: .
+    container_name: whisper-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - whisper-cache:/home/whisper/.cache
+    entrypoint: >
+      sh -lc "export PYTHONPATH=/app/src &&
+              exec python3 /app/src/run_server.py"
+    restart: unless-stopped
+
+volumes:
+  whisper-cache:
